@@ -7,9 +7,6 @@ import json
 # intent_scheme(event).
 
 def lambda_handler(event, context):
-    '''if (event["session"]["application"]["applicationId"] !=
-            "amzn1.ask.skill.ac89efca-87a7-4129-b018-bccd27387572"):
-        raise ValueError("Invalid Application ID")'''
         
     if event['session']['new']:
         on_start()
