@@ -2,26 +2,16 @@ import boto3
 
 
 def store_in_db(name):
-    # SNS to notify user about visitor
-    client = boto3.client("sns", aws_access_key_id="",
-                          aws_secret_access_key="",
-                          aws_session_token="",
-                          region_name="us-east-1")
-    if name is not None:
-        client.publish(PhoneNumber="", Message="Hi !! You have " + name + " at your door.")
-    else:
-        client.publish(PhoneNumber="", Message="Hi !! You have guest at your door.")
-
-    # Store username in DB
-    # dynamodb = boto3.resource('dynamodb')
-    # # , region_name='us-east-1',
-    # #                   endpoint_url=" https://dynamodb.us-east-1.amazonaws.com/doorwatch")
-    # table = dynamodb.Table('doorwatch')
-    # print(table)
-    # response = table.put_item(Item={
-    #     'Name': name
-    # })
-    # print(response)
+    # Store username in DynamoDB
+    dynamodb = boto3.resource('dynamodb')
+    # , region_name='us-east-1',
+    #                   endpoint_url=" https://dynamodb.us-east-1.amazonaws.com/doorwatch")
+    table = dynamodb.Table('doorwatch')
+    print(table)
+    response = table.put_item(Item={
+        'Name': name
+    })
+    print(response)
 
 
 def identify_family(source_file):
@@ -68,6 +58,16 @@ def identify_family(source_file):
     #     print(key.name)
 
 
+def send_sns():
+    # SNS to notify user about visitor
+    client = boto3.client("sns", aws_access_key_id="",
+                          aws_secret_access_key="",
+                          aws_session_token="",
+                          region_name="us-east-1")
+
+    client.publish(PhoneNumber="+16692688350", Message="Hi !! You have guest at your door.")
+
+
 if __name__ == "__main__":
     fileName = 'target3.JPG'
     fileName = "/Users/Downloads/target3.JPG"
@@ -95,5 +95,6 @@ if __name__ == "__main__":
     for label in expectedLabels:
         if label in detectedLabelNames:
             print('Expected Human label is present: ' + label)
+            send_sns()
             identify_family(fileName)
             break
