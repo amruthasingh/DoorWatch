@@ -18,17 +18,32 @@ import java.util.*;
 
 public class S3ImageCreateLambda implements RequestHandler<S3Event, LambdaParameters> {
 
-  String region = "us-east-1";
+  private LambdaParameters parameters;
+  private AmazonRekognition amazonRekognitionClient;
+  private String region = "us-east-1";
+  private String familyPrefix = "family";
+  private String humanPrefix = "humanFound";
+  private float similarityThreshold = 90;
+  private AmazonS3 s3Client;
+  private String oldKey;
+  private String bucketName;
+  private int maxLabels = 10;
+  private float minLabelConfidence = 90F;
+  private Context context;
+  private String newKey;
+
 
   public LambdaParameters handleRequest(S3Event s3Event, Context context) {
-
+ 	this.context = context;
     context.getLogger()
         .log("Input Function [" + context.getFunctionName() + "], S3Event [" + s3Event.toJson().toString() + "]");
-    LambdaParameters parameters = LambdaParameters
-        .builder()
-        .bucketName(s3Event.getRecords().get(0).getS3().getBucket().getName())
-        .s3Key(s3Event.getRecords().get(0).getS3().getObject().getKey())
-        .stepFunctionId(UUID.randomUUID()).build();
+    s3Client = AmazonS3ClientBuilder
+        .standard()
+        .withCredentials(new EnvironmentVariableCredentialsProvider())
+        .withRegion(region)
+        .build();
+    amazonRekognitionClient = AmazonRekognitionClientBuilder.defaultClient();
+    parameters = setLambdaparameters(s3Event);
     context.getLogger().log("S3 upload parameter values " + parameters.toString());
     System.out.println("S3 Upload parameters : " + parameters.toString());
 
@@ -102,4 +117,21 @@ public class S3ImageCreateLambda implements RequestHandler<S3Event, LambdaParame
     Date date = new Date();
     return formatter.format(date);
   }
+
+  /**
+   * Initialize lambda parameters with s3 trigger event
+   * @param s3Event triggered this lambda
+   * @return update lambda parameters
+   */
+  private LambdaParameters setLambdaparameters(S3Event s3Event) {
+//    oldKey = s3Event.getRecords().get(0).getS3().getObject().getKey();
+//    bucketName = s3Event.getRecords().get(0).getS3().getBucket().getName();
+
+    return LambdaParameters
+        .builder()
+        .bucketName(bucketName)
+        .s3Key(oldKey)
+        .stepFunctionId(UUID.randomUUID()).build();
+  }
+
 }
