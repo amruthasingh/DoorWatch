@@ -65,7 +65,7 @@ def send_sns():
                           aws_session_token="",
                           region_name="us-east-1")
 
-    client.publish(PhoneNumber="+16692688350", Message="Hi !! You have guest at your door.")
+    client.publish(PhoneNumber="", Message="Hi !! You have guest at your door.")
 
 
 if __name__ == "__main__":
