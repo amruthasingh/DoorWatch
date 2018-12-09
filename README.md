@@ -148,6 +148,7 @@ Hardware:
 
 Set up the project locally:
 
+
 • Configure Raspberry Pi
 
 • Set up the python scripts for camera and motion sensor
