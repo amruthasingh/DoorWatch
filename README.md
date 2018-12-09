@@ -76,6 +76,8 @@ Sample Demo Screenshots:
 
 ![3](https://user-images.githubusercontent.com/42819574/49694553-3a0a4e00-fb41-11e8-84e4-d0bdb1897a38.png)
 
+<img width="219" alt="sample" src="https://user-images.githubusercontent.com/42819574/49701278-3b6a6380-fb9f-11e8-8aac-cba1f05c577b.PNG">
+
 
 Pre-requisites Set Up
 
