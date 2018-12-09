@@ -56,6 +56,7 @@ def identify_family(source_file):
                 name = name_list[1].split(".")
                 print("Family name : " + name[0])
                 store_in_db(name[0])
+                send_sns(name[0])
                 break
         if family_found:
             break
@@ -64,14 +65,16 @@ def identify_family(source_file):
     #     print(key.name)
 
 
-def send_sns():
+def send_sns(name):
     # SNS to notify user about visitor
     client = boto3.client("sns", aws_access_key_id="",
                           aws_secret_access_key="",
                           aws_session_token="",
                           region_name="us-east-1")
-
-    client.publish(PhoneNumber="", Message="Hi !! You have guest at your door.")
+    if name is not None:
+        sns_client.publish(PhoneNumber="", Message="You have " + name + " at your door.")
+    else:
+        client.publish(PhoneNumber="", Message="You have guest at your door.")
 
 
 if __name__ == "__main__":
@@ -101,6 +104,5 @@ if __name__ == "__main__":
     for label in expectedLabels:
         if label in detectedLabelNames:
             print('Expected Human label is present: ' + label)
-            send_sns()
             identify_family(fileName)
             break
