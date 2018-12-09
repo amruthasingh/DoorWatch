@@ -57,5 +57,27 @@ https://user-images.githubusercontent.com/42819574/49694548-28c14180-fb41-11e8-8
 
 https://user-images.githubusercontent.com/42819574/49694553-3a0a4e00-fb41-11e8-84e4-d0bdb1897a38.png
 
+Pre-requisites Set Up
+
+AWS Services:
+
+•	EC2: This service is used to display the image of visitor on screen
+•	AutoScaling Group: This service is used for EC2 instance scaling and management. 
+•	Elastic Load Balancer: This service is used for dynamic traffic routing 
+•	SNS: It sends the text notification to the user
+•	CloudWatch: Used for monitoring the logs
+•	Route53: This service is used to host a domain to make application publically available
+•	S3: Used for storing the images
+•	S3 Cross Region Replication: This service is used for Disaster Recovery in case of region outage
+•	CloudFront: It reduces the latency and increases throughput
+•	Lifecycle Rules: This service is used for automatic data tiering to different storage layers 
+•	Versioning: This feature is enabled on S3 bucket.
+•	CloudWatch alarms: alarms are raised whenever particular instances occurs such as spin up of EC2 instances, termination of EC2 instances etc.
+•	CloudTrail: Used for logging the application events.
+•	Lambda: This service is used for human recognition and to invoke the Alexa skill.
+
+
+
+
 
 
