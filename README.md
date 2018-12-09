@@ -47,6 +47,8 @@ Feature List:
 
 •	AWS SNS service is used to send the text notification to the user
 
+•	AWS Lambda is used to invoke the Alexa skill
+
 •	Alexa device is used for human interaction 
 
 
@@ -72,7 +74,7 @@ Sample Demo Screenshots:
 
 Pre-requisites Set Up
 
-AWS Services:
+AWS resources:
 
 •	EC2: This service is used to display the image of visitor on screen
 
@@ -92,15 +94,61 @@ AWS Services:
 
 •	CloudFront: It reduces the latency and increases throughput
 
-•	Lifecycle Rules: This service is used for automatic data tiering to different storage layers 
+•	Lifecycle Rules: This service is used for automatic data storage tiering to different storage layers such as S3, S3-IA and Amazon Glacier
 
 •	Versioning: This feature is enabled on S3 bucket.
 
 •	CloudWatch alarms: alarms are raised whenever particular instances occurs such as spin up of EC2 instances, termination of EC2 instances etc.
 
-•	CloudTrail: Used for logging the application events.
+•	CloudTrail: Used for logging the application events such as API calls.
 
-•	Lambda: This service is used for human recognition and to invoke the Alexa skill.
+•	AWS Lambda: This service is used for human recognition and to invoke the Alexa skill.
+
+•	AWS IOT Core: This service is used to register the thing (Raspberry Pi) using certificates.
+
+•	AWS Rekognition: This service is used for human recognition and comparision between the faces.
+
+•	Polly: This is a text to speech service that informs the user about visitor's presence with buzzer.
+
+•	Alexa Skill: Alexa skill is used to invoke the alexa device for human assistance.
+
+•	RDS: RDS database service is used to store and retrieve the information about family members.
+
+• VPC: Virtual Private Cloud is used for isolation of the network.
+
+
+List of required softwares:
+
+• Python Boto3
+
+• Raspbian OS
+
+• pip
+
+• AWS CLI
+
+
+Hardware:
+
+• Raspberry Pi
+
+• PIR Motion Sensor
+
+• Camera
+
+• Amazon Alexa
+
+
+Set up the project locally:
+
+• Configure Raspberry Pi
+
+• Set up the python scripts for camera and motion sensor
+
+• create the Alexa skill on amazon developer account
+
+• Configure Alexa device
+
 
 Architecture Diagram:
 
