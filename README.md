@@ -109,7 +109,10 @@ AWS Services:
 
 Architecture Diagram:
 
-https://user-images.githubusercontent.com/42819574/49694641-c6694080-fb42-11e8-9a69-3eab312d5b44.png
+![architectural diagram](https://user-images.githubusercontent.com/42819574/49694641-c6694080-fb42-11e8-9a69-3eab312d5b44.png)
+
+
+
 
 
 
