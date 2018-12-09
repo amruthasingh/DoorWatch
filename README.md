@@ -153,7 +153,7 @@ Hardware:
 Set up the project locally:
 
 
-• Configure Raspberry Pi
+• Configure two Raspberry Pi's. One for sensing the motion and other one for lighting the LED's
 
 • Set up the python scripts for camera and motion sensor
 
