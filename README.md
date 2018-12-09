@@ -63,6 +63,7 @@ Components Used:
 
 4. Alexa: This is a smart device which will be used to assist user. Alexa will help user to identify the visitor and dispaly its image on the screen.
 
+
 Sample Demo Screenshots:
 
 ![1](https://user-images.githubusercontent.com/42819574/49694543-2232ca00-fb41-11e8-9335-cf2ca73bbfde.png)
@@ -74,7 +75,9 @@ Sample Demo Screenshots:
 
 Pre-requisites Set Up
 
+
 AWS resources:
+
 
 •	EC2: This service is used to display the image of visitor on screen
 
@@ -117,7 +120,9 @@ AWS resources:
 • VPC: Virtual Private Cloud is used for isolation of the network.
 
 
+
 List of required softwares:
+
 
 • Python Boto3
 
@@ -128,7 +133,9 @@ List of required softwares:
 • AWS CLI
 
 
+
 Hardware:
+
 
 • Raspberry Pi
 
@@ -151,6 +158,7 @@ Set up the project locally:
 
 
 Architecture Diagram:
+
 
 ![architectural diagram](https://user-images.githubusercontent.com/42819574/49694641-c6694080-fb42-11e8-9a69-3eab312d5b44.png)
 
