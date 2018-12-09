@@ -60,6 +60,8 @@ def identify_family(source_file):
                 break
         if family_found:
             break
+    if not family_found:
+        send_sns(None)
 
     # for key in bucket.get_all_keys(prefix='family/', delimiter='/'):
     #     print(key.name)
@@ -104,5 +106,6 @@ if __name__ == "__main__":
     for label in expectedLabels:
         if label in detectedLabelNames:
             print('Expected Human label is present: ' + label)
+            # Check family member present
             identify_family(fileName)
             break
