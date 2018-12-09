@@ -20,6 +20,18 @@ def store_in_db(name):
         print ("ERROR: Unexpected error: Could not connect to MySql instance.")
 
 
+def remove_table_data():
+    try:
+        conn = pymysql.connect(rds_host, user=rds_name,
+                               passwd=password, db=db_name, connect_timeout=5)
+        with conn.cursor() as cur:
+            cur.execute("DELETE  from visitor")
+            conn.commit()
+            conn.close()
+    except:
+        print("ERROR: Unexpected error: Could not connect to MySql instance.")
+        
+
 def identify_family(source_file):
     similarity_threshold = 95
     conn = boto3.client('s3')
@@ -106,6 +118,8 @@ if __name__ == "__main__":
     for label in expectedLabels:
         if label in detectedLabelNames:
             print('Expected Human label is present: ' + label)
+            # Clear previous data
+            remove_table_data()
             # Check family member present
             identify_family(fileName)
             break
