@@ -1,6 +1,5 @@
 # DoorWatch
 
-test
 
 University Name: http://www.sjsu.edu/
 
