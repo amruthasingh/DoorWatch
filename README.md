@@ -21,10 +21,11 @@ Zankhna Randeri https://www.linkedin.com/in/zankhna-randeri/
 
 Video Links: 
 
-Doorwatch Components Explanation: https://drive.google.com/file/d/1q29bS--DZVypgsbCeEh0O5TmYxdh4SSi/view?usp=sharing
+Doorwatch Components Explanation: https://youtu.be/v5d7apayYfU
 
 
-AWS Configurations: https://drive.google.com/file/d/1LLPnYA_zjWJBU04OrMJS5-pw44wwlhq6/view?usp=sharing
+AWS Configurations and CI/CD: https://drive.google.com/file/d/10EHy1K4jAb1J2XXPhdj-1FTTfMtG60m6/view?usp=sharing
+
 
 Project Introduction:
 
@@ -91,7 +92,7 @@ AWS resources:
 
 •	Elastic Load Balancer: This service is used for dynamic traffic routing 
 
-•	SNS: It sends the text notification to the user
+•	SNS: It sends the text notification to the user (SMS and Email Notifications).
 
 •	CloudWatch: Used for monitoring the logs
 
@@ -172,8 +173,9 @@ Architecture Diagram:
 ![cloud_project2_doorwatch](https://user-images.githubusercontent.com/42819574/49702978-31069480-fbb4-11e8-995f-da32f281a077.png)
 
 
+CI/CD diagram:
 
-
+![blank diagram 12](https://user-images.githubusercontent.com/42703827/49704468-5c937a00-fbc8-11e8-8f80-94ff8f75bdd8.png)
 
 
 
