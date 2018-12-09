@@ -48,3 +48,6 @@ Components Used:
 3. Camera: Motion sensor will trigger camera and image of the front door will be captured. We will do the image recognition of the image captured, in order to check for the presence of human. Image recognition will also compare the image of the visitor with known members of the house.
 
 4. Alexa: This is a smart device which will be used to assist user. Alexa will help user to identify the visitor and dispaly its image on the screen.
+
+Sample Demo Screenshots:
+
