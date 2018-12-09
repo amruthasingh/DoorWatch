@@ -59,6 +59,8 @@ Sample Demo Screenshots:
 
 ![1](https://user-images.githubusercontent.com/42819574/49694543-2232ca00-fb41-11e8-9335-cf2ca73bbfde.png)
 
+![2](https://user-images.githubusercontent.com/42819574/49694548-28c14180-fb41-11e8-8082-907b27ee2ace.png)
+
 https://user-images.githubusercontent.com/42819574/49694543-2232ca00-fb41-11e8-9335-cf2ca73bbfde.png
 
 https://user-images.githubusercontent.com/42819574/49694548-28c14180-fb41-11e8-8082-907b27ee2ace.png
