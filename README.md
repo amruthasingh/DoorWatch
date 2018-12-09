@@ -22,7 +22,7 @@ Feature List:
 •	The motion of a person is sensed using the motion sensors on Raspberry Pi
 •	Camera is triggered by the motion sensor that captures the image of the visitor
 •	The image is recognized using AWS Rekognition service and uploaded to AWS S3 bucket
-•	AWS IOT is configured ……..
+•	AWS IOT is configured for communication between the devices
 •	Polly is used on Raspberry Pi to notify user about the visitor presence
 •	AWS SNS service is used to send the text notification to the user
 •	Alexa device is used for human interaction 
