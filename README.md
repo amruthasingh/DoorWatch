@@ -89,6 +89,8 @@ AWS Services:
 
 •	Lambda: This service is used for human recognition and to invoke the Alexa skill.
 
+Architecture Diagram:
+
 
 
 
