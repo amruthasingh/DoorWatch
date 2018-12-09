@@ -1,31 +1,34 @@
+import boto3
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
 import json
 import time
-import boto3
+import os
 
 def customCallback(client, userdata, message):
     print("Received a new message: ")
     print(message.payload)
     response = polly_client.synthesize_speech(VoiceId='Joanna',
-                OutputFormat='mp3', 
-                Text = 'We have a visitor.')
+                        OutputFormat='mp3', 
+                                        Text = 'We have a visitor.')
 
-    file = open('speech.mp3', 'w')
+    file = open('speech9.mp3', 'w')
     file.write(response['AudioStream'].read())
     file.close()
+    os.system('mpg123 -q speech9.mp3')
     print("from topic: ")
     print(message.topic)
     print("--------------\n\n")
 
-clientId = "myClientID1"
-thingEndpoint = '*********************'
-certificatePath = '********************'
-privateKeyPath = '********************'
-rooCACertPath = '*******************'
+clientId = "myClientID4"
+thingEndpoint = '*************************'
+certificatePath = '*******************************'
+privateKeyPath = '***************************'
+rooCACertPath = '*********************'
+
 polly_client = boto3.Session(
-                aws_access_key_id=************,
-    aws_secret_access_key=***********,
-    region_name='us-west-2').client('polly')
+                        aws_access_key_id='*************************',                     
+                            aws_secret_access_key='****************************',
+                                region_name='************************').client('polly')
 
 print "before setup1 ..."
 
