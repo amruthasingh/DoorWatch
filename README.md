@@ -125,6 +125,7 @@ AWS resources:
 
 • VPC: Virtual Private Cloud is used for isolation of the network.
 
+• IAM: IAM user and role is used to grant permissions to access AWS resources to authorized users.
 
 
 List of required softwares:
