@@ -50,4 +50,5 @@ Components Used:
 4. Alexa: This is a smart device which will be used to assist user. Alexa will help user to identify the visitor and dispaly its image on the screen.
 
 Sample Demo Screenshots:
+https://user-images.githubusercontent.com/42819574/49694543-2232ca00-fb41-11e8-9335-cf2ca73bbfde.png
 
