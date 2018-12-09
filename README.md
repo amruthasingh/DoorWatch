@@ -3,13 +3,21 @@
 test
 
 University Name: http://www.sjsu.edu/
+
 Course: Cloud Technologies
+
 Professor Sanjay Garje 
+
 ISA: Anushri Srinath Aithal
+
 Student:
+
 Amrutha Singh Balaji Singh 
+
 Poorva Agarawal
+
 Snehal Yeole
+
 Zankhna Randeri
 
 Project Introduction:
