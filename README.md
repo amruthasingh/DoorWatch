@@ -13,7 +13,7 @@ Student:
 
 Amrutha Singh Balaji Singh https://www.linkedin.com/in/amruthasinghb/
 
-Poorva Agarwal
+Poorva Agarwal https://www.linkedin.com/in/poorva-agarwal/
 
 Snehal Yeole https://www.linkedin.com/in/snehal-yeole-35889188/
 
