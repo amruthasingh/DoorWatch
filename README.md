@@ -19,6 +19,13 @@ Snehal Yeole
 
 Zankhna Randeri
 
+Video Links: 
+
+Doorwatch Components Explanation: https://drive.google.com/file/d/1q29bS--DZVypgsbCeEh0O5TmYxdh4SSi/view?usp=sharing
+
+
+AWS Configurations: https://drive.google.com/file/d/1LLPnYA_zjWJBU04OrMJS5-pw44wwlhq6/view?usp=sharing
+
 Project Introduction:
 
 DoorWatch will overcome the home security issues without having to open the door, move a curtain or peak through a window, without making your presence known, just by notifying audibly and visually screening the visitors by recording all the motion events at your doorstep and pushing it to the Amazon Web Services cloud. 
@@ -91,6 +98,7 @@ AWS Services:
 Architecture Diagram:
 
 https://user-images.githubusercontent.com/42819574/49694641-c6694080-fb42-11e8-9a69-3eab312d5b44.png
+
 
 
 
