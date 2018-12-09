@@ -1,17 +1,23 @@
 import boto3
+import pymysql as pymysql
+
+rds_host = "doorwatch.cylfnvlcuclu.us-east-1.rds.amazonaws.com"
+rds_name = ""
+password = ""
+db_name = ""
+port = 3306
 
 
 def store_in_db(name):
-    # Store username in DynamoDB
-    dynamodb = boto3.resource('dynamodb')
-    # , region_name='us-east-1',
-    #                   endpoint_url=" https://dynamodb.us-east-1.amazonaws.com/doorwatch")
-    table = dynamodb.Table('doorwatch')
-    print(table)
-    response = table.put_item(Item={
-        'Name': name
-    })
-    print(response)
+    try:
+        conn = pymysql.connect(rds_host, user=rds_name,
+                               passwd=password, db=db_name, connect_timeout=5)
+        with conn.cursor() as cur:
+            cur.execute("INSERT INTO visitor(Name) values (%s)", name)
+            conn.commit()
+            conn.close()
+    except:
+        print ("ERROR: Unexpected error: Could not connect to MySql instance.")
 
 
 def identify_family(source_file):
@@ -69,7 +75,7 @@ def send_sns():
 
 
 if __name__ == "__main__":
-    fileName = 'target3.JPG'
+    #fileName = 'target3.JPG'
     fileName = "/Users/Downloads/target3.JPG"
     bucket = 'smartcamerabucket'
     max_lables = 10;
