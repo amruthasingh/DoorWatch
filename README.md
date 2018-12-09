@@ -33,7 +33,11 @@ Smart Home security is becoming the main concern nowadays. The main idea behind 
 We are using hardware and human assistance devices to accomplish our project. Raspberry pi is used alongwith the camera and motion sensors. The motion sensors will sense the motion of a person on the front door and trigger the camera to capture the image. The captured image will be recognized using AWS Rekognition service to detect the presence of human and to compare the visitor’s image with the family members images. 
 Alexa device is used for human assistance. Whenever there is a visitor, user can request Alexa to display image of that visitor on the screen (we are using EC2 instance to display the image)
 
+
+
 Feature List:
+
+
 
 •	The motion of a person is sensed using the motion sensors on Raspberry Pi
 
