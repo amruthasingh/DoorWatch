@@ -11,13 +11,13 @@ ISA: Anushri Srinath Aithal
 
 Student:
 
-Amrutha Singh Balaji Singh 
+Amrutha Singh Balaji Singh https://www.linkedin.com/in/amruthasinghb/
 
-Poorva Agarawal
+Poorva Agarwal
 
-Snehal Yeole
+Snehal Yeole https://www.linkedin.com/in/snehal-yeole-35889188/
 
-Zankhna Randeri
+Zankhna Randeri https://www.linkedin.com/in/zankhna-randeri/
 
 Video Links: 
 
