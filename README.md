@@ -168,7 +168,8 @@ Set up the project locally:
 Architecture Diagram:
 
 
-![architectural diagram](https://user-images.githubusercontent.com/42819574/49694641-c6694080-fb42-11e8-9a69-3eab312d5b44.png)
+
+![cloud_project2_doorwatch](https://user-images.githubusercontent.com/42819574/49702978-31069480-fbb4-11e8-995f-da32f281a077.png)
 
 
 
