@@ -170,7 +170,7 @@ Architecture Diagram:
 
 
 
-![cloud_project2_doorwatch](https://user-images.githubusercontent.com/42819574/49702978-31069480-fbb4-11e8-995f-da32f281a077.png)
+![doorwatch_modified_architecture](https://user-images.githubusercontent.com/42819574/49758088-ebf56780-fc72-11e8-99dc-07b661b8345a.png)
 
 
 CI/CD diagram:
