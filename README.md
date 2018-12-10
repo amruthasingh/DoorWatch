@@ -122,7 +122,7 @@ AWS resources:
 
 •	Alexa Skill: Alexa skill is used to invoke the alexa device for human assistance.
 
-•	RDS: RDS database service is used to store and retrieve the information about family members.
+•	Dynamodb: AWS Dynamodb is used to store and retrieve the information about family members.
 
 • VPC: Virtual Private Cloud is used for isolation of the network.
 
